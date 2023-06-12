@@ -27,7 +27,7 @@ var ajaxCall = (key, url, prompt) => {
     
     "Content-Type": "application/json",
     
-    Authorization: `Bearer ${key}`,
+    Authorization: 'Bearer ${key}',
     
     },
     
@@ -65,7 +65,7 @@ var ajaxCall = (key, url, prompt) => {
     
     const template = document.createElement("template");
     
-    template.innerHTML = `
+    template.innerHTML = '
     
     <style>
     
@@ -75,7 +75,7 @@ var ajaxCall = (key, url, prompt) => {
     
     </div>
     
-    `;
+    ';
     
     class MainWebComponent extends HTMLElement {
     
@@ -85,7 +85,7 @@ var ajaxCall = (key, url, prompt) => {
     
     apiKey,
     
-    `${url}/${endpoint}`,
+    '${url}/${endpoint}',
     
     prompt
     
